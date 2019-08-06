@@ -22,3 +22,4 @@ $result+=$PSObject
  
 return $result
 }
+Get-Office365TeamUser
