@@ -6,7 +6,6 @@ Param (
 )
  
 $result = @()
-#$userName = "testuser@iworksengg.ga"
 $groups = Get-Team
 $groups | foreach {
 $groupMembersip = Get-AzureADGroupMember -ObjectId $_.groupId | where {$_.UserPrincipalName -eq $userName}
